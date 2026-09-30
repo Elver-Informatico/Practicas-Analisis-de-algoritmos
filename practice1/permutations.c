@@ -59,39 +59,28 @@ int* generate_perm(int n)
     return NULL;
   }
 
-  /*reservamos memoria para el array*/
-
+  /* 1. Reservamos memoria para el array */
   array = (int *)malloc(n * sizeof(int));
-
   if(array == NULL) return NULL;
 
-  /*rellenamos el array con los numeros del 1 al N*/
-  printf("check 1: \n");
+  /* 2. PRIMERO rellenamos TODO el array con los numeros del 1 al N */
   for (i = 0; i < n; i++) {
-    printf("%d\n", i);
-    array[i]= 1+i;
-
+    array[i] = 1 + i;
   }
-  printf("check 2: \n");
+
+  /* 3. LUEGO desordenamos el array ya inicializado */
   for (i = 0; i < n; i++) {
-    /*generamos numeros aleatorios*/
-    j = random_num(i, n - 1);
-    printf("%d\n", j);
+    j = random_num(0, n - 1);
 
     if (j == ERR) {
       free(array); 
       return NULL;
     }
 
-    /*reordenamos el array*/
+    /* reordenamos el array */
     num = array[i];
     array[i] = array[j];
     array[j] = num;
-  }
-
-  printf("check 3: \n");
-  for (i = 0; i < n; i++) {
-    printf("%d\n", array[i]);
   }
 
   return array;

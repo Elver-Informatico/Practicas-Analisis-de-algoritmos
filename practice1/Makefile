@@ -47,11 +47,11 @@ exercise1_test:
 
 exercise2_test:
 	@echo Running exercise2
-	@./exercise2 -size 1 -numP 5
+	@./exercise2 -size 0 -numP 20
 
 exercise3_test:
 	@echo Running exercise3
-	@./exercise3 -size 1 -numP 5
+	@./exercise3 -size 5 -numP 20
 
 exercise4_test:
 	@echo Running exercise4
