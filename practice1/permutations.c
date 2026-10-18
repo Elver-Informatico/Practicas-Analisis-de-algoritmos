@@ -59,16 +59,13 @@ int* generate_perm(int n)
     return NULL;
   }
 
-  /* 1. Reservamos memoria para el array */
   array = (int *)malloc(n * sizeof(int));
   if(array == NULL) return NULL;
 
-  /* 2. PRIMERO rellenamos TODO el array con los numeros del 1 al N */
   for (i = 0; i < n; i++) {
     array[i] = 1 + i;
   }
 
-  /* 3. LUEGO desordenamos el array ya inicializado */
   for (i = 0; i < n; i++) {
     j = random_num(0, n - 1);
 
@@ -77,7 +74,6 @@ int* generate_perm(int n)
       return NULL;
     }
 
-    /* reordenamos el array */
     num = array[i];
     array[i] = array[j];
     array[j] = num;
@@ -110,7 +106,6 @@ int** generate_permutations(int n_perms, int N)
     return NULL;
   }
 
-  /*reservamos memoria para el array*/
 
   matrix = (int **)malloc(n_perms * sizeof(int*));
 
@@ -119,7 +114,7 @@ int** generate_permutations(int n_perms, int N)
   for(i=0; i < n_perms; i++){
     matrix[i] = generate_perm(N);
     
-    if (matrix[i] == NULL){ /* En caso de error, liberar memoria y return NULL*/
+    if (matrix[i] == NULL){ 
       for(i -= 1; i >= 0; i--){
         free(matrix[i]);
       }
