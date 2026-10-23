@@ -92,48 +92,51 @@ int MergeSort(int* array, int ip, int iu){
 }
 
 
-int merge(int* array, int ip, int iu, int im){
-  int* array_aux = NULL;
-  int i = ip, j = im+1, k = 0, n;
-  int count = 0;
+int merge(int* array, int ip, int iu, int im) {
+    int* array_aux = NULL;
+    int i = ip, j = im + 1, k = 0;
+    int count = 0;
+    int n;
 
-  n = iu - ip + 1;
-  array_aux = (int *)malloc(n * sizeof(int));
-  if(array_aux == NULL) return ERR;
-  
-  while (i <= im && j <= iu){
-    count++;
-    if (array[i] < array[j]){ 
-      array_aux[k] = array[i];
-      i++;
-    } else {
-      array_aux[k] = array[j];
-      j++;
+    n = iu - ip + 1;
+    array_aux = (int *)malloc(n * sizeof(int));
+    if (array_aux == NULL) return ERR;
+
+    while (i <= im && j <= iu) {
+        count++; /* Contador de comparaciones */
+        if (array[i] < array[j]) {
+            array_aux[k] = array[i];
+            i++;
+        } else {
+            array_aux[k] = array[j];
+            j++;
+        }
+        k++;
     }
-    k++;
-  }
 
-  if (i > im){ /* copiar resto de tabla derecha */
-    while (j<=iu){
-      array_aux[k] = array[j];
-      j++;
-      k++;
+    if (i > im) { /* copiar resto de tabla derecha */
+        while (j <= iu) {
+            array_aux[k] = array[j];
+            j++;
+            k++;
+        }
+    } else if (j > iu) { /* copiar resto de tabla izquierda */
+        while (i <= im) {
+            array_aux[k] = array[i];
+            i++;
+            k++;
+        }
     }
-  } else if (j > iu){ /* copiar resto de tabla izquierda */
-    while (i <= im){
-      array_aux[k]=array[i];
-      i++;
-      k++;
+
+    /* Copiar de vuelta ajustando el índice de array_aux */
+    k = 0;
+    for (n = ip; n <= iu; n++) {
+        array[n] = array_aux[k];
+        k++;
     }
-  }
 
-  for (n = ip; n <= iu; n++) {
-    array[n] = array_aux[k];
-    k++;
-  }
-
-  free(array_aux);
-  return count;
+    free(array_aux);
+    return count;
 }
 
 
