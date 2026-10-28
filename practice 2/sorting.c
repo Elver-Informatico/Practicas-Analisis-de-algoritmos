@@ -139,32 +139,59 @@ int merge(int* array, int ip, int iu, int im) {
     return count;
 }
 
-
-/*
-int partition(int* array, int ip, int iu, int* pos, pfunc_pivot pivot)
+int pivot_min(int* array, int ip, int iu, int* pos)
 {
-  int count=0;
-  
-  
+  if(!array) return -1;
+  *pos = ip;
 
-  return count;
+
+return 0;
 }
+
 int QuickShort_min (int* array, int ip, int iu)
 {
-  int * pivote
-  
-  pivot_min(array, ip, iu, pivote);
+  int *pivote_indice = NULL,a ;
+    a=pivot_min(array,ip,iu,pivote_indice);
 
-  k=array[pivote];
+    if(a = -1) return ERR;
 
-  t[]
+    else 
+
+    M = partition(array, ip, iu, pivote_indice, pivot );
+
+    if(ip<M-1)
+    {
+        QuickShort_min(array, ip,M-1);
+    }
+
+    if(M+1<iu)
+    {
+        QuickShort_min(array, M+1,iu);
+    }
+
+    return OK;
 }
 
+
+
+
+
+
 int partition(int* array, int ip, int iu, int* pos, pfunc_pivot pivot)
-int pivot_min(int* array, int ip, int iu, int* pos)
+{
+  int *k,*M, aux;
+  pivot_min(array,ip,iu, M);
+  k= array[M];
 
+  aux=T[ip];
+  t[ip]=T[M];
+  T[M]=aux;
 
+  
+  return count;
+}
 
+/*
 ind Partir(tabla T, ind P, ind U)
 M=Medio(T,P,U);
 k=T[M];

@@ -1,0 +1,10 @@
+N:1000 | N_elems:10 | Time:0.000000 | Average:9710.000 | Min:9665 | Max:9742
+N:2000 | N_elems:10 | Time:0.000000 | Average:21421.000 | Min:21402 | Max:21449
+N:3000 | N_elems:10 | Time:0.000000 | Average:33929.000 | Min:33887 | Max:33987
+N:4000 | N_elems:10 | Time:0.000000 | Average:46827.000 | Min:46768 | Max:46875
+N:5000 | N_elems:10 | Time:0.000000 | Average:60215.000 | Min:60166 | Max:60249
+N:6000 | N_elems:10 | Time:0.000000 | Average:73842.000 | Min:73768 | Max:73886
+N:7000 | N_elems:10 | Time:0.000000 | Average:87693.000 | Min:87637 | Max:87785
+N:8000 | N_elems:10 | Time:0.000000 | Average:101646.000 | Min:101523 | Max:101718
+N:9000 | N_elems:10 | Time:0.000000 | Average:115997.000 | Min:115940 | Max:116070
+N:10000 | N_elems:10 | Time:0.000000 | Average:130429.000 | Min:130371 | Max:130486
