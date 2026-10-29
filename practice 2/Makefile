@@ -5,7 +5,7 @@
 
 CC = gcc -ansi -pedantic
 CFLAGS = -Wall
-EXE = exercise1 exercise2 exercise3 exercise4 exercise5
+EXE = exercise5 exercise52
 
 all : $(EXE)
 
@@ -60,4 +60,9 @@ exercise4_test:
 exercise5_test:
 	@echo Running exercise5
 	@./exercise5 -num_min 1000 -num_max 10000 -incr 1000 -numP 10 -outputFile merge_resultados.dat
+
+exercise52_test:
+	@echo Running exercise52
+	@./exercise52 -num_min 1000 -num_max 10000 -incr 1000 -numP 1000 -outputFile quickshort_resultados.dat
+
 

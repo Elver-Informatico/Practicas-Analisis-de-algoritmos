@@ -139,68 +139,170 @@ int merge(int* array, int ip, int iu, int im) {
     return count;
 }
 
+
+int partition(int* array, int ip, int iu, int* pos, pfunc_pivot pivot)
+{
+int M,res,i, menor=ip,val_pivote, aux,count=0;
+
+  res=pivot(array, ip, iu, &M);
+
+  val_pivote= array[M];
+
+  if(res==-1) return ERR;
+
+
+  else
+
+  /*ponemos el pivote si o si en el primer lugar*/
+
+aux = array[ip];
+array[ip]= array[M];
+array[M]= aux;
+
+/*comparamos y luego metemos el pivote en el siguiente del ultimo elemento que diga menor*/
+    for(i=ip+1;i<=iu;i++)
+
+    
+    {
+      count++;
+      if(array[i]<val_pivote)
+        { 
+        menor++;
+          
+        aux= array[menor];
+        array[menor]=array[i];
+        array[i]= aux;
+        }
+    }
+
+    aux=array[menor];
+    array[menor] = array[ip];
+    array[ip] =aux;
+
+    *pos=menor;
+
+return count+res;
+
+
+}
+
+
+
 int pivot_min(int* array, int ip, int iu, int* pos)
 {
-  if(!array) return -1;
+  if(!array||ip>iu) return -1;
   *pos = ip;
 
 
 return 0;
 }
 
-int QuickShort_min (int* array, int ip, int iu)
+int QuickSort_min (int* array, int ip, int iu)
 {
-  int *pivote_indice = NULL,a ;
-    a=pivot_min(array,ip,iu,pivote_indice);
+  int M ,a,b,c;
 
-    if(a = -1) return ERR;
+/*caso base en el que solo hay ya un elemento o ninguno*/
+    if(ip>=iu) return 0;
 
-    else 
+/*se hace la particion con el array indicado*/
+a= partition(array, ip, iu,&M, pivot_min);
 
-    M = partition(array, ip, iu, pivote_indice, pivot );
-
-    if(ip<M-1)
-    {
-        QuickShort_min(array, ip,M-1);
-    }
-
-    if(M+1<iu)
-    {
-        QuickShort_min(array, M+1,iu);
-    }
-
-    return OK;
-}
+    if(a == -1) return ERR;
 
 
+/*recursion y no hacen falta ifs ya que estan controlados los errores*/
 
 
+b=QuickSort_min (array,ip, M-1);
+c=QuickSort_min (array,M+1, iu);
 
-
-int partition(int* array, int ip, int iu, int* pos, pfunc_pivot pivot)
-{
-  int *k,*M, aux;
-  pivot_min(array,ip,iu, M);
-  k= array[M];
-
-  aux=T[ip];
-  t[ip]=T[M];
-  T[M]=aux;
+return  a+b+c;
 
   
-  return count;
 }
 
-/*
-ind Partir(tabla T, ind P, ind U)
-M=Medio(T,P,U);
-k=T[M];
-swap(T[P],T[M]);
-M=P;
-para i de P+1 a U:
-si T[i]<k:
-M++;
-swap(T[i],T[M]);
-swap(T[P],T[M]);
-devolver M;
-*/
+
+
+/*es exactamente la misma funicon lo que cambia es el puntero a funcion que se le manda a partition*/
+int QuickSort_mean(int* array, int ip, int iu)
+{
+  int M ,a,b,c;
+
+    if(ip>=iu) return 0;
+
+
+a= partition(array, ip, iu,&M, pivot_mean);
+
+    if(a == -1) return ERR;
+
+
+
+
+b=QuickSort_mean (array,ip, M-1);
+c=QuickSort_mean (array,M+1, iu);
+
+return  a+b+c;
+
+  
+}
+
+int pivot_mean(int* array, int ip, int iu, int* pos)
+{
+    if(!array||ip>iu) return -1;
+    *pos = ip+(iu-ip)/2;
+
+
+return 0;
+}
+
+int pivot_median(int* array, int ip, int iu, int* pos)
+{
+  int P,M,U;
+    if(!array||ip>iu) return -1;
+
+    
+    /*calculamos la mediana de los extremos y el medio*/
+
+    P=array[ip]; 
+    M=array[ip+(iu-ip)/2];
+    U=array[iu];
+
+
+if ((P <= M && M <= U) || (U <= M && M <= P)) {
+        *pos = ip+(iu-ip)/2;
+        return 2; 
+    }
+    
+    else if ((M <= P && P <= U) || (U <= P && P <= M)) {
+        *pos = ip;
+        return 4; 
+    }
+
+    else {
+        *pos = iu;
+        return 4; 
+    }
+  }
+
+
+int QuickSort_median(int* array, int ip, int iu)
+{
+  int M ,a,b,c;
+
+
+    if(ip>=iu) return 0;
+
+a= partition(array, ip, iu,&M, pivot_median);
+
+    if(a == -1) return ERR;
+
+
+
+
+b=QuickSort_median(array,ip, M-1);
+c=QuickSort_median(array,M+1, iu);
+
+return  a+b+c;
+
+  
+}
