@@ -155,11 +155,11 @@ int M,res,i, menor=ip,val_pivote, aux,count=0;
 
   /*ponemos el pivote si o si en el primer lugar*/
 
-aux = array[ip];
-array[ip]= array[M];
-array[M]= aux;
+  aux = array[ip];
+  array[ip]= array[M];
+  array[M]= aux;
 
-/*comparamos y luego metemos el pivote en el siguiente del ultimo elemento que diga menor*/
+  /*comparamos y luego metemos el pivote en el siguiente del ultimo elemento que diga menor*/
     for(i=ip+1;i<=iu;i++)
 
     
