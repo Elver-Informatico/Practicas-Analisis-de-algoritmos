@@ -1,0 +1,666 @@
+
+
+*******************************************************************************
+Mon Nov 16 22:23:01 2026
+
+
+FIT:    data read from 'merge_resultados.dat' using (get_val(stringcolumn(1))):(get_val(stringcolumn(4)))
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_merge_ob(x)
+	f_merge_ob(x) = a_m * x * log2(x) + b_m * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a_m           b_m          
+   0 6.0045390941e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.6227818883e+04  -8.95e-08  5.67e-02    1.002777e+00  -2.845837e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 16227.8
+rel. change during last iteration : -8.94821e-13
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 45.0386
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2028.48
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a_m             = 1.00278          +/- 0.0048       (0.4787%)
+b_m             = -0.284584        +/- 0.06184      (21.73%)
+
+correlation matrix of the fit parameters:
+                a_m    b_m    
+a_m             1.000 
+b_m            -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:23:01 2026
+
+
+FIT:    data read from 'merge_resultados.dat' using (get_val(stringcolumn(1))):(get_val(stringcolumn(3)))
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_merge_t(x)
+	f_merge_t(x) = c_m * x * log2(x) + d_m * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   c_m           d_m          
+   0 7.4202126579e+10   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   7 1.0524851278e-08  -3.01e-08  5.67e-03    1.584354e-08  -8.891404e-08
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 1.05249e-08
+rel. change during last iteration : -3.01483e-13
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.62713e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.31561e-09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+c_m             = 1.58435e-08      +/- 3.866e-09    (24.4%)
+d_m             = -8.8914e-08      +/- 4.98e-08     (56.01%)
+
+correlation matrix of the fit parameters:
+                c_m    d_m    
+c_m             1.000 
+d_m            -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'merge_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_merge_ob(x)
+	f_merge_ob(x) = am_ob * x * log2(x) + bm_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   am_ob         bm_ob        
+   0 6.0045390941e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.6227818883e+04  -8.95e-08  5.67e-02    1.002777e+00  -2.845837e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 16227.8
+rel. change during last iteration : -8.94821e-13
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 45.0386
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2028.48
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+am_ob           = 1.00278          +/- 0.0048       (0.4787%)
+bm_ob           = -0.284584        +/- 0.06184      (21.73%)
+
+correlation matrix of the fit parameters:
+                am_ob  bm_ob  
+am_ob           1.000 
+bm_ob          -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'merge_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_merge_t(x)
+	f_merge_t(x)  = am_t * x * log2(x) + bm_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   am_t          bm_t         
+   0 7.4078971320e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 1.0524851278e-08  -8.19e-06  5.67e-07    1.584354e-08  -8.891404e-08
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.05249e-08
+rel. change during last iteration : -8.18663e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.62713e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.31561e-09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+am_t            = 1.58435e-08      +/- 3.866e-09    (24.4%)
+bm_t            = -8.8914e-08      +/- 4.98e-08     (56.01%)
+
+correlation matrix of the fit parameters:
+                am_t   bm_t   
+am_t            1.000 
+bm_t           -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'qs_min_quickshort_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmin_ob(x)
+	f_qmin_ob(x) = aqmin_ob * x * log2(x) + bqmin_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmin_ob      bqmin_ob     
+   0 5.1035116976e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.9498127625e+04  -7.02e-07  5.67e-02    1.377581e+00  -2.724120e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 19498.1
+rel. change during last iteration : -7.01712e-12
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 49.3687
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2437.27
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmin_ob        = 1.37758          +/- 0.005262     (0.3819%)
+bqmin_ob        = -2.72412         +/- 0.06779      (2.488%)
+
+correlation matrix of the fit parameters:
+                aqmin_ bqmin_ 
+aqmin_ob        1.000 
+bqmin_ob       -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'qs_min_quickshort_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmin_t(x)
+	f_qmin_t(x)  = aqmin_t * x * log2(x) + bqmin_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmin_t       bqmin_t      
+   0 7.4110329850e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 3.0796114624e-09  -2.80e-05  5.67e-07    1.443698e-08  -1.001558e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.07961e-09
+rel. change during last iteration : -2.8044e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.96202e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.84951e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmin_t         = 1.4437e-08       +/- 2.091e-09    (14.48%)
+bqmin_t         = -1.00156e-07     +/- 2.694e-08    (26.9%)
+
+correlation matrix of the fit parameters:
+                aqmin_ bqmin_ 
+aqmin_t         1.000 
+bqmin_t        -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'qs_mean_quickshort_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmean_ob(x)
+	f_qmean_ob(x) = aqmean_ob * x * log2(x) + bqmean_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmean_ob     bqmean_ob    
+   0 5.1881532344e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.9737543250e+04  -7.32e-07  5.67e-02    1.385604e+00  -2.818399e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 19737.5
+rel. change during last iteration : -7.32442e-12
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 49.6708
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2467.19
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmean_ob       = 1.3856           +/- 0.005294     (0.3821%)
+bqmean_ob       = -2.8184          +/- 0.0682       (2.42%)
+
+correlation matrix of the fit parameters:
+                aqmean bqmean 
+aqmean_ob       1.000 
+bqmean_ob      -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'qs_mean_quickshort_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmean_t(x)
+	f_qmean_t(x)  = aqmean_t * x * log2(x) + bqmean_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmean_t      bqmean_t     
+   0 7.4110329850e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 3.0796114624e-09  -2.80e-05  5.67e-07    1.443698e-08  -1.001558e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.07961e-09
+rel. change during last iteration : -2.8044e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.96202e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.84951e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmean_t        = 1.4437e-08       +/- 2.091e-09    (14.48%)
+bqmean_t        = -1.00156e-07     +/- 2.694e-08    (26.9%)
+
+correlation matrix of the fit parameters:
+                aqmean bqmean 
+aqmean_t        1.000 
+bqmean_t       -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'qs_median_quickshort_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmed_ob(x)
+	f_qmed_ob(x) = aqmed_ob * x * log2(x) + bqmed_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmed_ob      bqmed_ob     
+   0 1.4299730529e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.9283933723e+03  -1.67e-06  5.67e-02    1.186353e+00  -7.963343e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1928.39
+rel. change during last iteration : -1.67269e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 15.5258
+variance of residuals (reduced chisquare) = WSSR/ndf   : 241.049
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmed_ob        = 1.18635          +/- 0.001655     (0.1395%)
+bqmed_ob        = -0.796334        +/- 0.02132      (2.677%)
+
+correlation matrix of the fit parameters:
+                aqmed_ bqmed_ 
+aqmed_ob        1.000 
+bqmed_ob       -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:30:50 2026
+
+
+FIT:    data read from 'qs_median_quickshort_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmed_t(x)
+	f_qmed_t(x)  = aqmed_t * x * log2(x) + bqmed_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmed_t       bqmed_t      
+   0 7.4110329850e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 3.0796114624e-09  -2.80e-05  5.67e-07    1.443698e-08  -1.001558e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.07961e-09
+rel. change during last iteration : -2.8044e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.96202e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.84951e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmed_t         = 1.4437e-08       +/- 2.091e-09    (14.48%)
+bqmed_t         = -1.00156e-07     +/- 2.694e-08    (26.9%)
+
+correlation matrix of the fit parameters:
+                aqmed_ bqmed_ 
+aqmed_t         1.000 
+bqmed_t        -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'merge_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_merge_ob(x)
+	f_merge_ob(x) = am_ob * x * log2(x) + bm_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   am_ob         bm_ob        
+   0 6.0045390941e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.6227818883e+04  -8.95e-08  5.67e-02    1.002777e+00  -2.845837e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 16227.8
+rel. change during last iteration : -8.94821e-13
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 45.0386
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2028.48
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+am_ob           = 1.00278          +/- 0.0048       (0.4787%)
+bm_ob           = -0.284584        +/- 0.06184      (21.73%)
+
+correlation matrix of the fit parameters:
+                am_ob  bm_ob  
+am_ob           1.000 
+bm_ob          -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'merge_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_merge_t(x)
+	f_merge_t(x)  = am_t * x * log2(x) + bm_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   am_t          bm_t         
+   0 7.4078971320e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 1.0524851278e-08  -8.19e-06  5.67e-07    1.584354e-08  -8.891404e-08
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1.05249e-08
+rel. change during last iteration : -8.18663e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.62713e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.31561e-09
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+am_t            = 1.58435e-08      +/- 3.866e-09    (24.4%)
+bm_t            = -8.8914e-08      +/- 4.98e-08     (56.01%)
+
+correlation matrix of the fit parameters:
+                am_t   bm_t   
+am_t            1.000 
+bm_t           -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'qs_min_quickshort_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmin_ob(x)
+	f_qmin_ob(x) = aqmin_ob * x * log2(x) + bqmin_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmin_ob      bqmin_ob     
+   0 5.1035116976e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.9498127625e+04  -7.02e-07  5.67e-02    1.377581e+00  -2.724120e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 19498.1
+rel. change during last iteration : -7.01712e-12
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 49.3687
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2437.27
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmin_ob        = 1.37758          +/- 0.005262     (0.3819%)
+bqmin_ob        = -2.72412         +/- 0.06779      (2.488%)
+
+correlation matrix of the fit parameters:
+                aqmin_ bqmin_ 
+aqmin_ob        1.000 
+bqmin_ob       -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'qs_min_quickshort_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmin_t(x)
+	f_qmin_t(x)  = aqmin_t * x * log2(x) + bqmin_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmin_t       bqmin_t      
+   0 7.4110329850e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 3.0796114624e-09  -2.80e-05  5.67e-07    1.443698e-08  -1.001558e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.07961e-09
+rel. change during last iteration : -2.8044e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.96202e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.84951e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmin_t         = 1.4437e-08       +/- 2.091e-09    (14.48%)
+bqmin_t         = -1.00156e-07     +/- 2.694e-08    (26.9%)
+
+correlation matrix of the fit parameters:
+                aqmin_ bqmin_ 
+aqmin_t         1.000 
+bqmin_t        -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'qs_mean_quickshort_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmean_ob(x)
+	f_qmean_ob(x) = aqmean_ob * x * log2(x) + bqmean_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmean_ob     bqmean_ob    
+   0 5.1881532344e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.9737543250e+04  -7.32e-07  5.67e-02    1.385604e+00  -2.818399e+00
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 19737.5
+rel. change during last iteration : -7.32442e-12
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 49.6708
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2467.19
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmean_ob       = 1.3856           +/- 0.005294     (0.3821%)
+bqmean_ob       = -2.8184          +/- 0.0682       (2.42%)
+
+correlation matrix of the fit parameters:
+                aqmean bqmean 
+aqmean_ob       1.000 
+bqmean_ob      -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'qs_mean_quickshort_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmean_t(x)
+	f_qmean_t(x)  = aqmean_t * x * log2(x) + bqmean_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmean_t      bqmean_t     
+   0 7.4110329850e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 3.0796114624e-09  -2.80e-05  5.67e-07    1.443698e-08  -1.001558e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.07961e-09
+rel. change during last iteration : -2.8044e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.96202e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.84951e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmean_t        = 1.4437e-08       +/- 2.091e-09    (14.48%)
+bqmean_t        = -1.00156e-07     +/- 2.694e-08    (26.9%)
+
+correlation matrix of the fit parameters:
+                aqmean bqmean 
+aqmean_t        1.000 
+bqmean_t       -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'qs_median_quickshort_resultados.dat' using 2:8
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmed_ob(x)
+	f_qmed_ob(x) = aqmed_ob * x * log2(x) + bqmed_ob * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmed_ob      bqmed_ob     
+   0 1.4299730529e+08   0.00e+00  5.67e+04    1.000000e+00   1.000000e+00
+   6 1.9283933723e+03  -1.67e-06  5.67e-02    1.186353e+00  -7.963343e-01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 1928.39
+rel. change during last iteration : -1.67269e-11
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 15.5258
+variance of residuals (reduced chisquare) = WSSR/ndf   : 241.049
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmed_ob        = 1.18635          +/- 0.001655     (0.1395%)
+bqmed_ob        = -0.796334        +/- 0.02132      (2.677%)
+
+correlation matrix of the fit parameters:
+                aqmed_ bqmed_ 
+aqmed_ob        1.000 
+bqmed_ob       -0.999  1.000 
+
+
+*******************************************************************************
+Mon Nov 16 22:35:57 2026
+
+
+FIT:    data read from 'qs_median_quickshort_resultados.dat' using 2:6
+        format = x:z
+        #datapoints = 10
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f_qmed_t(x)
+	f_qmed_t(x)  = aqmed_t * x * log2(x) + bqmed_t * x
+	log2(x) = log(x) / log(2)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   aqmed_t       bqmed_t      
+   0 7.4110329850e+00   0.00e+00  5.67e-01    1.000000e-05   1.000000e-05
+   6 3.0796114624e-09  -2.80e-05  5.67e-07    1.443698e-08  -1.001558e-07
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.07961e-09
+rel. change during last iteration : -2.8044e-10
+
+degrees of freedom    (FIT_NDF)                        : 8
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.96202e-05
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.84951e-10
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+aqmed_t         = 1.4437e-08       +/- 2.091e-09    (14.48%)
+bqmed_t         = -1.00156e-07     +/- 2.694e-08    (26.9%)
+
+correlation matrix of the fit parameters:
+                aqmed_ bqmed_ 
+aqmed_t         1.000 
+bqmed_t        -0.999  1.000 
